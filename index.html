@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 :style="{color: activeColor, fontSize: fontSize + 'px'}">
+        Hello 1T Sprint!
+      </h1>
+      <hr />
+      <input id="nick" v-model="checkedName[0]" />
+      <label for="nick">Ник1</label>
+      <br />
+      <br />
+      <input id="nick2" v-model="checkedName[1]" />
+      <label for="nick2">Ник2</label>
+      <br />
+      <br />
+      <input id="nick3" v-model="checkedName[2]" />
+      <label for="nick3">Ник3</label>
+      <h5>{{checkedName}}</h5>
+
+      <hr />
+      <select v-model="selected">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      <span>Selected: {{ selected }}</span>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
